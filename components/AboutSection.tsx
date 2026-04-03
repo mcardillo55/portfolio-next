@@ -20,9 +20,8 @@ export default function AboutSection() {
       <div className="max-w-3xl mx-auto px-4 -mt-16 relative z-10">
         <div className="bg-white rounded-lg shadow-lg p-8">
           <p className="text-lg leading-relaxed mb-4 text-[#003E4A]">
-            I received a Bachelor of Science in Computer Engineering from Penn
-            State University, and I&apos;ve worked in a variety of areas, from
-            web development and cloud infrastructure to Linux kernel and systems
+            Software engineer with 10+ years of professional experience
+            across web platforms, cloud infrastructure, and systems
             development. Outside of coding, I enjoy gaming,{" "}
             <a
               href="https://www.strava.com/athletes/5396583"
@@ -30,7 +29,7 @@ export default function AboutSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              hiking and cycling.
+              cycling and hiking.
             </a>
           </p>
           <p className="text-center text-lg text-[#003E4A]">
