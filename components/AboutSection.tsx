@@ -41,7 +41,7 @@ export default function AboutSection() {
             >
               contact me
             </a>{" "}
-            with any questions or collaborations!
+            with any questions or&nbsp;collaborations!
           </p>
         </div>
       </div>
