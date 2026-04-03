@@ -96,14 +96,14 @@ export default function ProjectsSection() {
                 {project.stack.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
+                    className="text-sm px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <div className="flex gap-2">
-                {project.source && (
+              <div className="flex gap-2 justify-center">
+                {project.source ? (
                   <a
                     href={project.source}
                     target="_blank"
@@ -112,8 +112,12 @@ export default function ProjectsSection() {
                   >
                     Source
                   </a>
+                ) : (
+                  <span className="text-sm px-4 py-1.5 rounded border border-gray-300 text-gray-400 font-semibold cursor-not-allowed">
+                    Source
+                  </span>
                 )}
-                {project.demo && (
+                {project.demo ? (
                   <a
                     href={project.demo}
                     target="_blank"
@@ -122,6 +126,10 @@ export default function ProjectsSection() {
                   >
                     Demo
                   </a>
+                ) : (
+                  <span className="text-sm px-4 py-1.5 rounded border border-gray-300 text-gray-400 font-semibold cursor-not-allowed">
+                    Demo
+                  </span>
                 )}
               </div>
             </div>
