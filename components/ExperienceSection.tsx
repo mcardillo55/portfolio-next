@@ -45,10 +45,10 @@ export default function ExperienceSection() {
                   {exp.years}
                 </span>
               </div>
-              <p className="text-sm font-semibold text-[#003E4A]/70 mb-2">
+              <p className="text-base font-semibold text-[#003E4A]/70 mb-2">
                 {exp.title}
               </p>
-              <p className="text-sm text-[#003E4A] mb-3">{exp.description}</p>
+              <p className="text-base text-[#003E4A] mb-3">{exp.description}</p>
               <div className="flex flex-wrap gap-1.5">
                 {exp.stack.map((tech) => (
                   <span

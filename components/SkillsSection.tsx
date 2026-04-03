@@ -46,12 +46,12 @@ export default function SkillsSection() {
                 {cat.icon}
               </div>
             </div>
-            <h3 className="text-sm font-bold text-[#003E4A] text-center mb-3 font-heading">
+            <h3 className="text-base font-bold text-[#003E4A] text-center mb-3 font-heading">
               {cat.title}
             </h3>
             <ul className="divide-y">
               {cat.items.map((item) => (
-                <li key={item} className="py-2 text-[#003E4A] text-sm text-center">
+                <li key={item} className="py-2 text-[#003E4A] text-base text-center">
                   {item}
                 </li>
               ))}

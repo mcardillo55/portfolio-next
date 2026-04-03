@@ -43,9 +43,9 @@ export default function Navbar() {
           <Image
             src="/images/name_logo.jpg"
             alt="Michael Cardillo"
-            width={180}
-            height={40}
-            className="h-8 w-auto"
+            width={241}
+            height={108}
+            className="h-11 w-auto"
             priority
           />
         </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
                 }
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noopener noreferrer" : undefined}
-                className="relative px-3 py-2 text-sm font-bold text-teal-800 hover:text-cyan-500 transition-colors font-heading group"
+                className="relative px-3 py-2 text-xl font-bold text-[#00687D] hover:text-cyan-500 transition-colors font-heading group"
               >
                 {link.label}
                 <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-cyan-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
@@ -114,7 +114,7 @@ export default function Navbar() {
                 }
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noopener noreferrer" : undefined}
-                className="block px-4 py-3 text-right font-bold text-teal-800 hover:bg-[#003E4A] hover:text-white transition-colors font-heading"
+                className="block px-4 py-3 text-right text-xl font-bold text-[#00687D] hover:bg-[#003E4A] hover:text-white transition-colors font-heading"
               >
                 {link.label}
               </a>

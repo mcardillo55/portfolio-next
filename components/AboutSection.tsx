@@ -21,11 +21,11 @@ export default function AboutSection() {
           />
         </div>
         <div className="text-[#003E4A] order-1 lg:order-last">
-          <p className="text-base leading-relaxed mb-4">
+          <p className="text-lg leading-relaxed mb-4">
             I received a Bachelor of Science in Computer Engineering from Penn
-            State University, and I&apos;ve worked in a variety of areas, from web
-            development and cloud infrastructure to Linux kernel development.
-            Outside of coding, I enjoy gaming,{" "}
+            State University, and I&apos;ve worked in a variety of areas, from
+            web development and cloud infrastructure to Linux kernel and systems
+            development. Outside of coding, I enjoy gaming,{" "}
             <a
               href="https://www.strava.com/athletes/5396583"
               className="text-[#2C8293] hover:text-cyan-500 underline"
@@ -35,10 +35,10 @@ export default function AboutSection() {
               hiking and cycling.
             </a>
           </p>
-          <p className="text-center text-base">
+          <p className="text-center text-lg">
             Below is a selection of my work. Feel free to{" "}
             <a
-              href="mailto:mcardillo55@gmail.com"
+              href="mailto:michaelcardillo@proton.me"
               className="text-[#2C8293] hover:text-cyan-500 underline"
             >
               contact me

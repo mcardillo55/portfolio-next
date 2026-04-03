@@ -1,7 +1,7 @@
 export default function FooterSection() {
   return (
     <footer className="bg-gray-100 py-6">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#003E4A]">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-base text-[#003E4A]">
         <span>
           Washington, D.C. Area &bull; {new Date().getFullYear()}
         </span>
@@ -29,7 +29,7 @@ export default function FooterSection() {
             </svg>
           </a>
           <a
-            href="mailto:mcardillo55@gmail.com"
+            href="mailto:michaelcardillo@proton.me"
             className="text-[#003E4A] hover:text-[#00A8C9] transition-colors"
             aria-label="Email"
           >
