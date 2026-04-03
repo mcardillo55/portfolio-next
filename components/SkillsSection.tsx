@@ -43,7 +43,7 @@ export default function SkillsSection() {
             style={{ border: "1px solid var(--color-border)" }}
           >
             <div className="flex justify-center mb-3">
-              <div className="w-14 h-14 rounded-full text-white flex items-center justify-center" style={{ backgroundColor: "var(--color-primary)" }}>
+              <div className="w-14 h-14 rounded-full text-white flex items-center justify-center" style={{ backgroundColor: "var(--color-icon-bg)" }}>
                 {cat.icon}
               </div>
             </div>

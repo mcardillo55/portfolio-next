@@ -40,7 +40,7 @@ export default function ExperienceSection() {
         {experiences.map((exp) => (
           <div key={exp.company} className="mb-10 ml-6">
             {/* Timeline dot */}
-            <div className="absolute -left-[9px] w-4 h-4 rounded-full border-2" style={{ backgroundColor: "var(--color-primary)", borderColor: "var(--color-bg)" }} />
+            <div className="absolute -left-[9px] w-4 h-4 rounded-full border-2" style={{ backgroundColor: "var(--color-icon-bg)", borderColor: "var(--color-bg)" }} />
             <div className="rounded-lg p-5 hover:shadow-md transition-shadow" style={{ backgroundColor: "var(--color-bg)", border: "1px solid var(--color-border)" }}>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                 <div className="flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function ExperienceSection() {
                     alt={`${exp.company} logo`}
                     width={96}
                     height={96}
-                    className="h-24 w-24 object-contain"
+                    className="h-24 w-24 object-contain logo-safe"
                   />
                   <h3 className="text-lg font-bold font-heading">
                     {exp.company}

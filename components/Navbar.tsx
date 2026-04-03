@@ -36,7 +36,7 @@ export default function Navbar() {
             alt="Michael Cardillo"
             width={241}
             height={108}
-            className="h-20 w-auto"
+            className="h-20 w-auto logo-safe"
             priority
           />
         </a>
@@ -67,7 +67,7 @@ export default function Navbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="lg:hidden p-2 rounded text-white"
-          style={{ backgroundColor: "var(--color-primary)" }}
+          style={{ backgroundColor: "var(--color-icon-bg)" }}
           aria-label="Toggle menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
