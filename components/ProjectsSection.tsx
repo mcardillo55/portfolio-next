@@ -89,10 +89,10 @@ export default function ProjectsSection() {
                   </span>
                 )}
               </div>
-              <p className="text-base text-[#003E4A] mb-3 flex-1">
+              <p className="text-base text-[#003E4A] mb-3">
                 {project.description}
               </p>
-              <div className="flex flex-wrap items-end gap-1.5 mb-3 h-[3.25rem]">
+              <div className="flex flex-wrap gap-1.5 mb-3 mt-auto">
                 {project.stack.map((tech) => (
                   <span
                     key={tech}
