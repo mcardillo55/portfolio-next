@@ -5,7 +5,7 @@ export default function HeroSection() {
         Hello, World!
       </h1>
       <h2 className="text-xl md:text-2xl text-[#003E4A] font-heading max-w-3xl mx-auto px-4">
-        I&apos;m Michael, a software engineer in the Washington,&nbsp;D.C.&nbsp;area.
+        I&apos;m Michael, a software engineer in Washington,&nbsp;D.C.
       </h2>
     </section>
   );
