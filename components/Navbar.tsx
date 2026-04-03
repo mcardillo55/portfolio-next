@@ -38,14 +38,14 @@ export default function Navbar() {
         scrolled ? "shadow-md bg-white/95 backdrop-blur-sm" : "bg-white"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-20">
         <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <Image
             src="/images/name_logo.jpg"
             alt="Michael Cardillo"
             width={241}
             height={108}
-            className="h-11 w-auto"
+            className="h-16 w-auto"
             priority
           />
         </a>
