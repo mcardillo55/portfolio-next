@@ -61,16 +61,17 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-12 max-w-6xl mx-auto px-4">
-      <h2 className="text-2xl font-bold text-[#003E4A] font-heading mb-8 text-center">
+      <h2 className="text-2xl font-bold font-heading mb-8 text-center">
         PROJECTS
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="border rounded-lg overflow-hidden hover:shadow-lg hover:scale-[1.03] transition-all duration-300 bg-white flex flex-col"
+            className="rounded-lg overflow-hidden hover:shadow-lg hover:scale-[1.03] transition-all duration-300 flex flex-col"
+            style={{ backgroundColor: "var(--color-bg)", border: "1px solid var(--color-border)" }}
           >
-            <div className="relative h-48 bg-gray-100">
+            <div className="relative h-48" style={{ backgroundColor: "var(--color-bg-alt)" }}>
               <Image
                 src={project.image}
                 alt={project.title}
@@ -80,16 +81,16 @@ export default function ProjectsSection() {
             </div>
             <div className="p-4 flex flex-col flex-1">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-lg font-bold text-[#003E4A] font-heading">
+                <h3 className="text-lg font-bold font-heading">
                   {project.title}
                 </h3>
                 {project.years && (
-                  <span className="text-base text-[#2C8293] font-semibold">
+                  <span className="text-base font-semibold" style={{ color: "var(--color-link)" }}>
                     {project.years}
                   </span>
                 )}
               </div>
-              <p className="text-base text-[#003E4A] mb-3 flex-1">
+              <p className="text-base mb-3 flex-1">
                 {project.description}
               </p>
               <div className="h-24 flex flex-col justify-between">
@@ -97,7 +98,8 @@ export default function ProjectsSection() {
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="text-sm px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
+                      className="text-sm px-2 py-0.5 rounded"
+                      style={{ backgroundColor: "var(--color-badge-bg)" }}
                     >
                       {tech}
                     </span>
@@ -109,12 +111,12 @@ export default function ProjectsSection() {
                     href={project.source}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm px-4 py-1.5 rounded border border-[#00687D] text-[#00687D] font-semibold hover:bg-[#00687D] hover:text-white transition-colors"
+                    className="btn-primary text-sm px-4 py-1.5 rounded font-semibold transition-colors"
                   >
                     Source
                   </a>
                 ) : (
-                  <span className="text-sm px-4 py-1.5 rounded border border-gray-300 text-gray-400 font-semibold cursor-not-allowed">
+                  <span className="btn-disabled text-sm px-4 py-1.5 rounded font-semibold cursor-not-allowed">
                     Source
                   </span>
                 )}
@@ -123,12 +125,12 @@ export default function ProjectsSection() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm px-4 py-1.5 rounded border border-[#00687D] text-[#00687D] font-semibold hover:bg-[#00687D] hover:text-white transition-colors"
+                    className="btn-primary text-sm px-4 py-1.5 rounded font-semibold transition-colors"
                   >
                     Demo
                   </a>
                 ) : (
-                  <span className="text-sm px-4 py-1.5 rounded border border-gray-300 text-gray-400 font-semibold cursor-not-allowed">
+                  <span className="btn-disabled text-sm px-4 py-1.5 rounded font-semibold cursor-not-allowed">
                     Demo
                   </span>
                 )}

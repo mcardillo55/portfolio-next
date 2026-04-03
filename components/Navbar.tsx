@@ -25,8 +25,9 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-shadow ${
-        scrolled ? "shadow-md bg-white/95 backdrop-blur-sm" : "bg-white"
+        scrolled ? "shadow-md backdrop-blur-sm" : ""
       }`}
+      style={{ backgroundColor: scrolled ? "color-mix(in srgb, var(--color-bg) 95%, transparent)" : "var(--color-bg)" }}
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-24">
         <a href="#top">
@@ -52,10 +53,11 @@ export default function Navbar() {
                 onClick={link.href.startsWith("#") ? () => setMenuOpen(false) : undefined}
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noopener noreferrer" : undefined}
-                className="relative px-3 py-2 text-xl font-bold text-[#00687D] hover:text-cyan-500 transition-colors font-heading group"
+                className="relative px-3 py-2 text-xl font-bold transition-colors font-heading group"
+                style={{ color: "var(--color-nav)" }}
               >
                 {link.label}
-                <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-cyan-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                <span className="absolute bottom-1 left-3 right-3 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" style={{ backgroundColor: "var(--color-accent)" }} />
               </a>
             );
           })}
@@ -64,7 +66,8 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden p-2 rounded bg-[#003E4A] text-white"
+          className="lg:hidden p-2 rounded text-white"
+          style={{ backgroundColor: "var(--color-primary)" }}
           aria-label="Toggle menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-white border-t">
+        <div className="lg:hidden" style={{ backgroundColor: "var(--color-bg)", borderTop: "1px solid var(--color-border)" }}>
           {navLinks.map((link) => {
             const isExternal =
               link.href.startsWith("http") || link.href.endsWith(".pdf");
@@ -90,7 +93,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noopener noreferrer" : undefined}
-                className="block px-4 py-3 text-right text-xl font-bold text-[#00687D] hover:bg-[#003E4A] hover:text-white transition-colors font-heading"
+                className="nav-link-mobile block px-4 py-3 text-right text-xl font-bold transition-colors font-heading"
               >
                 {link.label}
               </a>

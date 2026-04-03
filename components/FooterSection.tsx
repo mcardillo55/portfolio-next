@@ -1,7 +1,7 @@
 export default function FooterSection() {
   return (
-    <footer className="bg-gray-100 py-6">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-base text-[#003E4A]">
+    <footer style={{ backgroundColor: "var(--color-bg-alt)" }} className="py-6">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-base">
         <span>
           Washington, D.C. &bull; {new Date().getFullYear()}
         </span>
@@ -10,7 +10,7 @@ export default function FooterSection() {
             href="https://www.linkedin.com/in/mcardillo55"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#003E4A] hover:text-[#00A8C9] transition-colors"
+            className="link-icon transition-colors"
             aria-label="LinkedIn"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,7 @@ export default function FooterSection() {
             href="https://github.com/mcardillo55"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#003E4A] hover:text-[#00A8C9] transition-colors"
+            className="link-icon transition-colors"
             aria-label="GitHub"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -30,7 +30,7 @@ export default function FooterSection() {
           </a>
           <a
             href="mailto:michaelcardillo@proton.me"
-            className="text-[#003E4A] hover:text-[#00A8C9] transition-colors"
+            className="link-icon transition-colors"
             aria-label="Email"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

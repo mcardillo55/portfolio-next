@@ -32,26 +32,27 @@ const skills = [
 export default function SkillsSection() {
   return (
     <section id="skills" className="py-12 max-w-4xl mx-auto px-4">
-      <h2 className="text-2xl font-bold text-[#003E4A] font-heading mb-8 text-center">
+      <h2 className="text-2xl font-bold font-heading mb-8 text-center">
         SKILLS
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
         {skills.map((cat) => (
           <div
             key={cat.title}
-            className="border rounded-lg py-6 px-6 w-full max-w-xs"
+            className="rounded-lg py-6 px-6 w-full max-w-xs"
+            style={{ border: "1px solid var(--color-border)" }}
           >
             <div className="flex justify-center mb-3">
-              <div className="w-14 h-14 rounded-full bg-[#003E4A] text-white flex items-center justify-center">
+              <div className="w-14 h-14 rounded-full text-white flex items-center justify-center" style={{ backgroundColor: "var(--color-primary)" }}>
                 {cat.icon}
               </div>
             </div>
-            <h3 className="text-base font-bold text-[#003E4A] text-center mb-3 font-heading">
+            <h3 className="text-base font-bold text-center mb-3 font-heading">
               {cat.title}
             </h3>
-            <ul className="divide-y">
+            <ul className="divide-y" style={{ "--tw-divide-opacity": 1, borderColor: "var(--color-border)" } as React.CSSProperties}>
               {cat.items.map((item) => (
-                <li key={item} className="py-2 text-[#003E4A] text-base text-center">
+                <li key={item} className="py-2 text-base text-center" style={{ borderColor: "var(--color-border)" }}>
                   {item}
                 </li>
               ))}

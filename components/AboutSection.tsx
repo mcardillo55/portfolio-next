@@ -18,25 +18,27 @@ export default function AboutSection() {
 
       {/* Bio text overlapping the banner */}
       <div className="max-w-3xl mx-auto px-4 -mt-16 relative z-10">
-        <div className="bg-white rounded-lg shadow-lg p-8">
-          <p className="text-lg leading-relaxed mb-4 text-[#003E4A]">
+        <div className="rounded-lg shadow-lg p-8" style={{ backgroundColor: "var(--color-bg)" }}>
+          <p className="text-lg leading-relaxed mb-4">
             Software engineer with 10+ years of professional experience
             across web platforms, cloud infrastructure, and systems
             development. Outside of coding, I enjoy gaming,{" "}
             <a
               href="https://www.strava.com/athletes/5396583"
-              className="text-[#2C8293] hover:text-cyan-500 underline"
+              className="underline"
+              style={{ color: "var(--color-link)" }}
               target="_blank"
               rel="noopener noreferrer"
             >
               cycling and hiking.
             </a>
           </p>
-          <p className="text-center text-lg text-[#003E4A]">
+          <p className="text-center text-lg">
             Below is a selection of my work. Feel free to{" "}
             <a
               href="mailto:michaelcardillo@proton.me"
-              className="text-[#2C8293] hover:text-cyan-500 underline"
+              className="underline"
+              style={{ color: "var(--color-link)" }}
             >
               contact me
             </a>{" "}

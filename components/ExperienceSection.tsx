@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const experiences = [
   {
     company: "Capital One",
@@ -28,46 +30,45 @@ const experiences = [
   },
 ];
 
-import Image from "next/image";
-
 export default function ExperienceSection() {
   return (
     <section id="experience" className="py-12 max-w-4xl mx-auto px-4">
-      <h2 className="text-2xl font-bold text-[#003E4A] font-heading mb-8 text-center">
+      <h2 className="text-2xl font-bold font-heading mb-8 text-center">
         EXPERIENCE
       </h2>
-      <div className="relative border-l-2 border-[#003E4A]/20 ml-4 md:ml-8">
+      <div className="relative ml-4 md:ml-8" style={{ borderLeft: "2px solid var(--color-border)" }}>
         {experiences.map((exp) => (
           <div key={exp.company} className="mb-10 ml-6">
             {/* Timeline dot */}
-            <div className="absolute -left-[9px] w-4 h-4 rounded-full bg-[#003E4A] border-2 border-white" />
-            <div className="bg-white border rounded-lg p-5 hover:shadow-md transition-shadow">
+            <div className="absolute -left-[9px] w-4 h-4 rounded-full border-2" style={{ backgroundColor: "var(--color-primary)", borderColor: "var(--color-bg)" }} />
+            <div className="rounded-lg p-5 hover:shadow-md transition-shadow" style={{ backgroundColor: "var(--color-bg)", border: "1px solid var(--color-border)" }}>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                 <div className="flex items-center gap-3">
                   <Image
                     src={exp.logo}
                     alt={`${exp.company} logo`}
-                    width={32}
-                    height={32}
-                    className="h-8 w-8 object-contain"
+                    width={96}
+                    height={96}
+                    className="h-24 w-24 object-contain"
                   />
-                  <h3 className="text-lg font-bold text-[#003E4A] font-heading">
+                  <h3 className="text-lg font-bold font-heading">
                     {exp.company}
                   </h3>
                 </div>
-                <span className="text-sm text-[#2C8293] font-semibold">
+                <span className="text-sm font-semibold" style={{ color: "var(--color-link)" }}>
                   {exp.years}
                 </span>
               </div>
-              <p className="text-base font-semibold text-[#003E4A]/70 mb-2">
+              <p className="text-base font-semibold mb-2" style={{ color: "var(--color-primary-muted)" }}>
                 {exp.title}
               </p>
-              <p className="text-base text-[#003E4A] mb-3">{exp.description}</p>
+              <p className="text-base mb-3">{exp.description}</p>
               <div className="flex flex-wrap gap-1.5">
                 {exp.stack.map((tech) => (
                   <span
                     key={tech}
-                    className="text-sm px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
+                    className="text-sm px-2 py-0.5 rounded"
+                    style={{ backgroundColor: "var(--color-badge-bg)" }}
                   >
                     {tech}
                   </span>
