@@ -20,7 +20,7 @@ export default function AboutSection() {
       <div className="max-w-3xl mx-auto px-4 -mt-16 relative z-10">
         <div className="rounded-lg shadow-lg p-8" style={{ backgroundColor: "var(--color-bg)", border: "1px solid var(--color-border)" }}>
           <p className="text-lg leading-relaxed mb-4">
-            I&apos;ve been building software for over 10 years — everything
+            I&apos;ve been building software for over 10 years, everything
             from systems and embedded work to full-stack web platforms and
             cloud infrastructure. Outside of coding, I enjoy gaming,{" "}
             <a
