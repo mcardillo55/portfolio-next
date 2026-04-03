@@ -34,7 +34,7 @@ export default function AboutSection() {
             </a>
           </p>
           <p className="text-center text-lg">
-            Below is a selection of my work. Feel free to{" "}
+            Below is an overview of my work. Feel free to{" "}
             <a
               href="mailto:michaelcardillo@proton.me"
               className="underline"
