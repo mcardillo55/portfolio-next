@@ -96,7 +96,7 @@ export default function ProjectsSection() {
                 {project.stack.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-2 py-0.5 rounded bg-[#00687D] text-white"
+                    className="text-xs px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
                   >
                     {tech}
                   </span>
@@ -108,7 +108,7 @@ export default function ProjectsSection() {
                     href={project.source}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs px-3 py-1.5 rounded bg-[#00687D] text-white hover:bg-[#00A8C9] transition-colors"
+                    className="text-sm px-4 py-1.5 rounded border border-[#00687D] text-[#00687D] font-semibold hover:bg-[#00687D] hover:text-white transition-colors"
                   >
                     Source
                   </a>
@@ -118,7 +118,7 @@ export default function ProjectsSection() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs px-3 py-1.5 rounded bg-[#00687D] text-white hover:bg-[#00A8C9] transition-colors"
+                    className="text-sm px-4 py-1.5 rounded border border-[#00687D] text-[#00687D] font-semibold hover:bg-[#00687D] hover:text-white transition-colors"
                   >
                     Demo
                   </a>

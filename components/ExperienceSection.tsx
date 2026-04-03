@@ -53,7 +53,7 @@ export default function ExperienceSection() {
                 {exp.stack.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-2 py-0.5 rounded bg-[#00687D] text-white"
+                    className="text-xs px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
                   >
                     {tech}
                   </span>
