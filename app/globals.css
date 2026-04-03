@@ -94,4 +94,8 @@ body {
     background-color: #ffffff;
     padding: 0.375rem;
   }
+
+  .logo-invert {
+    filter: invert(1);
+  }
 }

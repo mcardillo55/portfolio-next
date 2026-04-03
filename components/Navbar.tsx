@@ -36,7 +36,7 @@ export default function Navbar() {
             alt="Michael Cardillo"
             width={241}
             height={108}
-            className="h-20 w-auto logo-safe"
+            className="h-20 w-auto logo-invert"
             priority
           />
         </a>
