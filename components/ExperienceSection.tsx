@@ -1,6 +1,7 @@
 const experiences = [
   {
     company: "Capital One",
+    logo: "/images/capitalone_logo.svg",
     title: "Sr. Software Engineer (Principal Associate)",
     years: "2025 – Present",
     description:
@@ -9,6 +10,7 @@ const experiences = [
   },
   {
     company: "Algo-Logic Systems",
+    logo: "/images/algologic.jpg",
     title: "Sr. Full Stack Software Engineer",
     years: "2021 – 2025",
     description:
@@ -17,6 +19,7 @@ const experiences = [
   },
   {
     company: "Cisco Systems",
+    logo: "/images/cisco_logo.svg",
     title: "Software Engineer",
     years: "2011 – 2016",
     description:
@@ -24,6 +27,8 @@ const experiences = [
     stack: ["Python", "Bash", "C", "Yocto"],
   },
 ];
+
+import Image from "next/image";
 
 export default function ExperienceSection() {
   return (
@@ -38,9 +43,18 @@ export default function ExperienceSection() {
             <div className="absolute -left-[9px] w-4 h-4 rounded-full bg-[#003E4A] border-2 border-white" />
             <div className="bg-white border rounded-lg p-5 hover:shadow-md transition-shadow">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                <h3 className="text-lg font-bold text-[#003E4A] font-heading">
-                  {exp.company}
-                </h3>
+                <div className="flex items-center gap-3">
+                  <Image
+                    src={exp.logo}
+                    alt={`${exp.company} logo`}
+                    width={32}
+                    height={32}
+                    className="h-8 w-8 object-contain"
+                  />
+                  <h3 className="text-lg font-bold text-[#003E4A] font-heading">
+                    {exp.company}
+                  </h3>
+                </div>
                 <span className="text-sm text-[#2C8293] font-semibold">
                   {exp.years}
                 </span>
