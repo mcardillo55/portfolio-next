@@ -80,11 +80,11 @@ export default function ProjectsSection() {
             </div>
             <div className="p-4 flex flex-col flex-1">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-base font-bold text-[#003E4A] font-heading">
+                <h3 className="text-lg font-bold text-[#003E4A] font-heading">
                   {project.title}
                 </h3>
                 {project.years && (
-                  <span className="text-xs text-[#2C8293] font-semibold">
+                  <span className="text-base text-[#2C8293] font-semibold">
                     {project.years}
                   </span>
                 )}
