@@ -92,7 +92,7 @@ export default function ProjectsSection() {
               <p className="text-base text-[#003E4A] mb-3">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-1.5 mb-3 mt-auto">
+              <div className="flex flex-wrap gap-1.5 mb-3">
                 {project.stack.map((tech) => (
                   <span
                     key={tech}
@@ -102,7 +102,7 @@ export default function ProjectsSection() {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-2 justify-center">
+              <div className="flex gap-2 justify-center mt-auto">
                 {project.source ? (
                   <a
                     href={project.source}
