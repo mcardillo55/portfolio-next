@@ -4,7 +4,7 @@ const experiences = [
     title: "Sr. Software Engineer (Principal Associate)",
     years: "2025 – Present",
     description:
-      "Building and maintaining enterprise-scale applications and cloud infrastructure.",
+      "Building and shipping features for OnePay, a Payment Exchange platform in the Bank Tech organization.",
     stack: ["TypeScript", "Angular", "Go", "AWS", "Kubernetes"],
   },
   {
@@ -12,7 +12,7 @@ const experiences = [
     title: "Sr. Full Stack Software Engineer",
     years: "2021 – 2025",
     description:
-      "Responsible for several different web systems, CI/CD workflows, and DevOps monitoring.",
+      "Built full-stack platforms for EV charging, IoT telemetry, and nanosecond-level financial market data analytics.",
     stack: ["Python", "Django", "Flask", "ReactJS", "GitLab CI/CD", "Docker", "Grafana", "Prometheus"],
   },
   {
@@ -20,7 +20,7 @@ const experiences = [
     title: "Software Engineer",
     years: "2011 – 2016",
     description:
-      "Implemented kernel features such as a system page, OS hardening, upstream patch merge automation, and urgent CVE patching.",
+      "Software engineer on the Core Software Group's internal Linux kernel team.",
     stack: ["Python", "Bash", "C", "Yocto"],
   },
 ];
