@@ -29,7 +29,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-24">
-        <a href="#" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <a href="#top">
           <Image
             src="/images/name_logo.jpg"
             alt="Michael Cardillo"

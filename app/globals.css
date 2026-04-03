@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
+  --font-sans: "Inter", sans-serif;
   --font-heading: "Roboto Slab", serif;
   --font-mono: "Courier New", Courier, monospace;
 }
@@ -12,7 +13,7 @@ html {
 
 body {
   color: #003e4a;
-  font-family: "Roboto Slab", serif;
+  font-family: var(--font-sans);
 }
 
 .font-heading {
