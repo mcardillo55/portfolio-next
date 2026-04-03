@@ -36,7 +36,15 @@ export default function Navbar() {
             alt="Michael Cardillo"
             width={241}
             height={108}
-            className="h-20 w-auto logo-invert"
+            className="h-20 w-auto block dark:hidden"
+            priority
+          />
+          <Image
+            src="/images/name_logo_dark.jpg"
+            alt="Michael Cardillo"
+            width={241}
+            height={108}
+            className="h-20 w-auto hidden dark:block"
             priority
           />
         </a>
