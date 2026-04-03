@@ -92,17 +92,19 @@ export default function ProjectsSection() {
               <p className="text-base text-[#003E4A] mb-3">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-1.5 mb-3">
-                {project.stack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-sm px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              <div className="mt-auto">
+                <div className="flex flex-wrap gap-1.5 mb-3">
+                  {project.stack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-sm px-2 py-0.5 rounded bg-[#003E4A]/10 text-[#003E4A]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="flex gap-2 justify-center mt-auto">
+              <div className="flex gap-2 justify-center">
                 {project.source ? (
                   <a
                     href={project.source}
