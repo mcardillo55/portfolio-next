@@ -25,10 +25,8 @@ export default function Navbar() {
   const handleClick = (href: string) => {
     setMenuOpen(false);
     if (href.startsWith("#")) {
-      const el = document.querySelector(href);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
+      // Use native anchor navigation so scroll-padding-top is respected
+      window.location.hash = href;
     }
   };
 
